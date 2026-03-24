@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Your Resume"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/text_primary"/>
+
+        </LinearLayout>
+
+
+        <!-- PROGRESS INDICATOR -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/progress_dot_inactive"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="6dp"
+                android:background="@drawable/progress_bar_active"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/progress_dot_inactive"/>
+
+        </LinearLayout>
+
+
+        <!-- UPLOAD CARD -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/uploadCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="16dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/dashed_upload_border"
+                android:gravity="center"
+                android:padding="30dp">
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/icon_container"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/outline_file_copy_24"
+                        android:tint="@color/primary"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select PDF Resume"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/text_primary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Supported formats: PDF, DOCX (Max 5MB)"
+                    android:textSize="13sp"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_secondary"/>
+
+                <Button
+                    android:id="@+id/browseButton"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:text="Browse Files"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/primary"
+                    android:backgroundTint="@color/detected_skill_bg"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- INFO CARD -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/border"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="14dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/border"
+                android:padding="14dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_info"
+                    android:tint="@color/primary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our AI analyzes your skills and experience against job descriptions to give you a match score."
+                    android:textSize="13sp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/text_secondary"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- UPLOAD BUTTON -->
+
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Upload CV"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="#FFFFFF"/>
+
+
+        <!-- STEP TEXT -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 2 of 3: Technical Background"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
