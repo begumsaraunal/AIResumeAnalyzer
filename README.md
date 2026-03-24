@@ -141,7 +141,7 @@ Includes:
 
 For a detailed breakdown of the development process, architecture decisions, and technical challenges:
 
-👉 **[Project Deep Dive (Notion)]([PASTE_YOUR_LINK_HERE](https://www.notion.so/AI-Resume-Analyzer-Project-Documentation-32d48838c2c080f89920ca28acebcd6e?source=copy_link))**
+👉 **[Project Deep Dive (Notion)]((https://www.notion.so/AI-Resume-Analyzer-Project-Documentation-32d48838c2c080f89920ca28acebcd6e?source=copy_link))**
 
 Includes:
 
