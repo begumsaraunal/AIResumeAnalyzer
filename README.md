@@ -130,7 +130,7 @@ uvicorn main:app --reload
 Run backend tests with:
 
 ```bash
-python -m pytest
+.\backend\venv\Scripts\python.exe -m pytest
 ```
 
 Current test coverage includes:
